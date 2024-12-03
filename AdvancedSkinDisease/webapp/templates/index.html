@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Skin Disease Diagnosis</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-image: url('/static/homebg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      /* Set default text color to white for readability */
+    }
+
+    .nav-container {
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Add semi-transparent black for contrast */
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      color: #f05454;
+      /* A soft red to match the professional theme */
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      background-color: #f05454;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background-color: #d43d3d;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 150px auto 40px;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Darkens the container for better contrast */
+      color: #fff;
+      /* Keeps text white for consistency */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+
+    h1 {
+      color: #f05454;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      /* Adds depth */
+    }
+
+    p {
+      color: #ffffff;
+      /* Ensure text is always visible */
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      /* Keeps light background */
+      color: #333;
+      /* Dark gray text for better visibility */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-card h3 {
+      color: #cc0000;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: #333;
+      /* Dark gray for card text */
+      line-height: 1.5;
+      /* Improves readability */
+    }
+
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      padding: 15px 30px;
+      background-color: #f05454;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      /* Makes button text stand out */
+    }
+
+    .cta-button:hover {
+      background-color: #d43d3d;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .team-info {
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    a {
+      color: #f05454;
+      /* Links styled in soft red */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="nav-container">
+    <a href="/" class="logo">Skin Disease Diagnose</a>
+    <div class="auth-buttons">
+      <a href="login" class="button login-button">Login</a>
+      <a href="register" class="button signup-button">Sign up</a>
+    </div>
+  </nav>
+
+  <div class="content-container">
+    <h1>Welcome to Skin Disease Diagnose leveraging Machine Learning</h1>
+
+    <p>
+      Our advanced AI-powered platform assists healthcare professionals in accurately diagnosing skin conditions through
+      cutting-edge image recognition technology.
+    </p>
+    <p style="font-size: 1.2em; font-weight: bold;">
+      How does it work?
+    </p>
+    <ul style="margin-left: 20px;">
+      <li><strong>Register and Login to the portal:</strong> Create a new account or log in to access our diagnostic
+        tools.</li>
+      <li><strong>Upload images:</strong> Upload the affected skin area's image.</li>
+      <li><strong>Instant analysis:</strong> Our algorithms provide a diagnosis.</li>
+      <li><strong>Detailed reports:</strong> Access detailed diagnosis reports.</li>
+    </ul>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Quick Diagnosis</h3>
+        <p>Get rapid analysis of skin conditions using our ML model.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Accurate Results</h3>
+        <p>Trained on verified datasets, ensuring high diagnostic reliability.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Advanced Diagnosis</h3>
+        <p>Our ensemble model enhances diagnostic precision.</p>
+      </div>
+    </div>
+    <a href="register" class="cta-button">Start Diagnosis Now</a>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 SkinDiseaseDiagnose. All rights reserved.</p>
+      <p class="team-info">Developed by Team 3</p>
+      <p>Contact us: ayushpandey2442@gmail.com <br> sivasrinandan@gmail.com</p>
+    </div>
+  </footer>
+</body>
+
+</html>
