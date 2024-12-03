@@ -66,7 +66,7 @@ The project targets individuals seeking initial insights into skin conditions be
 
 ---
 
-## **OUTCOME**
+## **Outcome**
 
 - **Home Page**: _A welcoming interface showcasing the purpose and features of the tool._  
   ![Home Page](/resultOutcome/home.png)
@@ -77,7 +77,7 @@ The project targets individuals seeking initial insights into skin conditions be
 - **Login Page**: _User-friendly login interface for secure access._  
   ![Login Page](/resultOutcome/login.png)
 
-- **Profile Page**: _Displays user information and uploaded images._  
+- **Profile Page**: _Display user page to uploade images of skin disease._  
   ![Profile Page](/resultOutcome/profile.png)
 
 - **Diagnosis Page**: _Interactive UI displaying diagnostic results and dimensional insights of the condition._  
@@ -101,7 +101,7 @@ The project targets individuals seeking initial insights into skin conditions be
 
 2. Navigate to the project directory:
    ```bash
-   cd B14_Project
+   cd B14_Project/AdvancedSkinDisease
 
 3. Run the server:
    ```bash
