@@ -1,4 +1,7 @@
-# B14_Project
+# **TEAM 3**
+
+---
+
 # **Advanced Skin Disease Diagnosis Leveraging Machine Learning**
 
 ## **Overview**
@@ -26,7 +29,6 @@ The project targets individuals seeking initial insights into skin conditions be
 3. **View Page for Results**
    - **Diagnostic Display**: Provides clear and insightful analysis results based on the uploaded image.
 
----
 
 ### **Milestone 2: Mastering Image Processing with OpenCV**
 1. **Foundational and Advanced OpenCV Skills**
@@ -41,7 +43,6 @@ The project targets individuals seeking initial insights into skin conditions be
    - **Region Isolation**: Contour detection for identifying skin lesions or abnormalities.
    - **Segmentation**: Isolating the affected area for precise analysis.
 
----
 
 ### **Milestone 3: UI Integration of Image Processing**
 - Integrated OpenCV into the project to enable real-time image analysis.
@@ -50,11 +51,10 @@ The project targets individuals seeking initial insights into skin conditions be
   - The backend processes images using OpenCV and the Canny Algorithm to detect and measure lesion dimensions.
   - Dimensional data is displayed on the UI, offering users insights into the extent of the condition.
 
----
 
 ### **Milestone 4: Integration of Voting Ensemble Model and Final Implementation**
 1. **Model Training and Deployment**
-   - **Voting Ensemble Model**: Combines Random Forest, SVM, and Logistic Regression, achieving 80% accuracy in skin condition classification.
+   - **Voting Ensemble Model**: Combines Random Forest, SVM, and XGBoost, achieving 80% accuracy in skin condition classification.
    - **Backend Integration**: Links the model with OpenCV for feature extraction and classification.
 
 2. **Real-Time Functionality**
@@ -69,19 +69,19 @@ The project targets individuals seeking initial insights into skin conditions be
 ## **OUTCOME**
 
 - **Home Page**: _A welcoming interface showcasing the purpose and features of the tool._  
-  ![Home Page](path/to/homepage.png)
+  ![Home Page](/resultOutcome/home.png)
 
 - **Registration Page**: _Secure user registration form for creating accounts._  
-  ![Registration Page](path/to/registration.png)
+  ![Registration Page](/resultOutcome/register.png)
 
 - **Login Page**: _User-friendly login interface for secure access._  
-  ![Login Page](path/to/login.png)
+  ![Login Page](/resultOutcome/login.png)
 
 - **Profile Page**: _Displays user information and uploaded images._  
-  ![Profile Page](path/to/profile.png)
+  ![Profile Page](/resultOutcome/profile.png)
 
 - **Diagnosis Page**: _Interactive UI displaying diagnostic results and dimensional insights of the condition._  
-  ![Diagnosis Page](path/to/diagnosis.png)
+  ![Diagnosis Page](/resultOutcome/dignosis.png)
 
 ---
 
@@ -98,3 +98,22 @@ The project targets individuals seeking initial insights into skin conditions be
 1. Clone the repository:
    ```bash
    git clone https://github.com/b14team3/B14_Project.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd B14_Project
+
+3. Run the server:
+   ```bash
+   python manage.py runserver
+
+4. Open the browser and navigate to:
+   ```bash
+   http://127.0.0.1:8000/
+
+---
+
+## **Contributors**
+
+- Ayush Pandey (Team Lead)
+- Moram Hari Naga Siva Sri Nandan
