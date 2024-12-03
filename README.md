@@ -88,7 +88,7 @@ The project targets individuals seeking initial insights into skin conditions be
 ## **Technologies Used**
 1. **Programming Languages**: Python
 2. **Frameworks**: Django for backend, OpenCV for image processing
-3. **Machine Learning**: Voting Ensemble Model (Random Forest, SVM, Logistic Regression)
+3. **Machine Learning**: Voting Ensemble Model (Random Forest, SVM, XGBoost)
 4. **Database**: SQLite3
 5. **Frontend**: HTML, CSS, JavaScript for UI design
 
