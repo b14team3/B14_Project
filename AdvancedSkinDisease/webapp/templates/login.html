@@ -14,7 +14,7 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      background: url('/static/loginbg.jpg') no-repeat center center fixed;
+      background: url('/static/login.jpg') no-repeat center center fixed;
       background-size: cover;
       min-height: 100vh;
       display: flex;
@@ -38,6 +38,7 @@
       align-items: center;
       padding: 40px;
       background: rgba(255, 255, 255, 0.593);
+      /* Slightly brighter background */
       border-radius: 10px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
@@ -120,25 +121,35 @@
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
+      /* Added more padding for better size */
       font-size: 16px;
+      /* Slightly larger font size */
       background: #545555;
+      /* Match the primary color */
       color: white;
       text-align: center;
       border-radius: 30px;
+      /* Fully rounded button */
       text-decoration: none;
       transition: background-color 0.3s ease, transform 0.2s ease;
       box-shadow: 0 3px 6px rgba(87, 87, 87, 0.3);
+      /* Subtle shadow */
     }
 
     a:hover {
       background-color: #545659;
+      /* Darker shade on hover */
       text-decoration: none;
+      /* Ensure no underline on hover */
       transform: scale(1.05);
+      /* Slight zoom effect */
     }
 
     a:active {
       background-color: #454648;
+      /* Even darker when clicked */
       transform: scale(0.95);
+      /* Slight shrink for click feedback */
     }
 
     .right-section {
@@ -164,10 +175,22 @@
 <body>
   <div class="overlay"></div>
 
-  <!-- Left Section: Form -->
   <div class="left-section">
     <div class="form-container">
       <h1>Login</h1>
+
+      <!-- Display error messages -->
+      {% if msg %}
+      <p style="color: red; text-align: center;">{{ msg }}</p>
+      {% endif %}
+      {% if form.non_field_errors %}
+      <ul style="color: red; text-align: center; list-style: none;">
+        {% for error in form.non_field_errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
       <form method="post">
         {% csrf_token %}
         <div class="form-group">
@@ -180,6 +203,7 @@
         </div>
         <button type="submit" class="login-button">Login</button>
       </form>
+
       <div class="medical-disclaimer">
         <strong>Medical Disclaimer:</strong> This system is for assistance only. Consult a healthcare provider for
         accurate diagnosis.
